@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#honk {
+    background-color: #22A7F0;
+    border: 5px solid #39D5FF;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#honk:hover {
+    background-color: #19B5FE;
+}
+
+#honk:hover img {
+    transform: scale(1.1);
+}
+
+#honk:active {
+    border: 5px solid #1297E0;
+    background-color: #0287D0;
+}
+
+#honk:active img {
+    transform: scale(0.8);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    transition: all 0.2s;
+}
